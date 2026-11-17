@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #050d1f;
+  color: #e2e8f0;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: 'tnum' 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes livepulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.animate-pulse {
+  animation: livepulse 1.2s ease-in-out infinite;
+}
