@@ -8,7 +8,7 @@ import { LiveCameras } from './components/LiveCameras'
 import { ProductionRecords } from './components/ProductionRecords'
 import { PanelSelectionProvider } from './components/Panel'
 import { PurchasingOverview } from './components/PurchasingOverview'
-import { SiuiMonitoring } from './components/SiuiMonitoring'
+import { MerilMonitoring } from './components/MerilMonitoring'
 import { useLiveMetrics } from './hooks/useLiveMetrics'
 
 const DESIGN_W = 1920
@@ -26,7 +26,7 @@ function TopBar({ scale }: { scale: number }) {
     <header className="flex h-9 shrink-0 items-center justify-between border-b border-cyan-500/20 bg-[#061228]/90 px-4">
       <div className="flex items-center gap-2">
         <span className="h-2 w-2 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee]" />
-        <h1 className="text-sm font-semibold tracking-[0.18em] text-white">SIUI MANUFACTURING OPERATIONS</h1>
+        <h1 className="text-sm font-semibold tracking-[0.18em] text-white">MERIL MANUFACTURING OPERATIONS</h1>
       </div>
       <div
         className="text-xs tabular-nums text-cyan-200/90"
@@ -75,7 +75,7 @@ export default function App() {
               </div>
               <div className="grid min-h-0 gap-2" style={{ gridTemplateColumns: '1fr 1.45fr 1fr' }}>
                 <InstrumentShipments />
-                <SiuiMonitoring
+                <MerilMonitoring
                   temperature={metrics.temperature}
                   humidity={metrics.humidity}
                   noise={metrics.noise}

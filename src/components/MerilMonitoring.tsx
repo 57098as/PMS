@@ -42,7 +42,7 @@ function Metric({ label, value, unit }: { label: string; value: number; unit: st
   )
 }
 
-export function SiuiMonitoring({
+export function MerilMonitoring({
   temperature,
   humidity,
   noise,
@@ -52,7 +52,7 @@ export function SiuiMonitoring({
   noise: number
 }) {
   return (
-    <Panel title="SIUI Production & Environmental Monitoring" icon={<Factory className="h-3.5 w-3.5" />}>
+    <Panel title="Meril Production & Environmental Monitoring" icon={<Factory className="h-3.5 w-3.5" />}>
       <div className="flex h-full min-h-0 flex-col gap-1.5">
         <div className="grid grid-cols-6 gap-1">
           <Metric label="Water" value={153} unit="m³/h" />
